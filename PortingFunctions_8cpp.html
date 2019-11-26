@@ -113,6 +113,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a2021602c5bfd87aeaece17d331966793"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8cpp.html#a2021602c5bfd87aeaece17d331966793">isHomog</a> (const Matrix&lt;&gt; &amp;m)</td></tr>
 <tr class="separator:a2021602c5bfd87aeaece17d331966793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39b7f7da4bb6abe6d35756b7f5fec153"><td class="memItemLeft" align="right" valign="top">Matrix&lt; 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8cpp.html#a39b7f7da4bb6abe6d35756b7f5fec153">transl</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:a39b7f7da4bb6abe6d35756b7f5fec153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an SE(3) translational homogeneous transform.  <a href="#a39b7f7da4bb6abe6d35756b7f5fec153">More...</a><br /></td></tr>
 <tr class="separator:a39b7f7da4bb6abe6d35756b7f5fec153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc8a24ef666d6603f724268dd19ae4d"><td class="memItemLeft" align="right" valign="top">Matrix&lt; 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8cpp.html#a4fc8a24ef666d6603f724268dd19ae4d">transl</a> (const Vector&lt; 3 &gt; &amp;tr)</td></tr>
 <tr class="separator:a4fc8a24ef666d6603f724268dd19ae4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +182,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>EUL2TR/EUL2R Convert Euler angles to homogeneous transform % % T = EUL2TR(PHI, THETA, PSI) is an SE(3) homogeneous % transformation matrix (4x4) with zero translation and rotation equivalent % to the specified Euler angles. These correspond to rotations about the Z, % Y, Z axes respectively. % % R = EUL2R(EUL) as above but the Euler angles are taken from the % vector (1x3) EUL = [PHI THETA PSI]. % % Options:: % 'deg' Angles given in degrees (radians default) % % Note:: % - The vectors PHI, THETA, PSI must be of the same length. % - The translational part is zero. % % See also EUL2R, RPY2TR, TR2EUL, SE3.eul. </p>
 
 <p>Definition at line <a class="el" href="PortingFunctions_8cpp_source.html#l00202">202</a> of file <a class="el" href="PortingFunctions_8cpp_source.html">PortingFunctions.cpp</a>.</p>
 
@@ -375,6 +377,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>RPY2TR/RPY2R Roll-pitch-yaw angles to homogeneous transform % % T = RPY2TR(ROLL, PITCH, YAW) is an SE(3) homogeneous % transformation matrix (4x4) with zero translation and rotation equivalent % to the specified roll, pitch, yaw angles angles. These correspond to % rotations about the Z, Y, X axes respectively. % % T = RPY2TR(RPY) as above but the roll, pitch, yaw angles are % taken from the vector (1x3) RPY=[ROLL,PITCH,YAW]. % % Note:: % - AXES ZYX % % See also TR2RPY, RPY2R, EUL2TR. </p>
 
 <p>Definition at line <a class="el" href="PortingFunctions_8cpp_source.html#l00151">151</a> of file <a class="el" href="PortingFunctions_8cpp_source.html">PortingFunctions.cpp</a>.</p>
 
@@ -607,6 +610,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Create an SE(3) translational homogeneous transform. </p>
+<p>T = transl(X, Y, Z) is an SE(3) homogeneous transform (4x4) representing a pure translation of X, Y and Z.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Translation in the x direction. </td></tr>
+    <tr><td class="paramname">y</td><td>Translation in the y direction. </td></tr>
+    <tr><td class="paramname">z</td><td>Translation in the z direction. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An SE(3) Homogeneous transformation matrix. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#a37d19c82396fcbd3a6baa0c3f55181d7" title="Create an SE(3) translational homogeneous transform. ">transl( const TooN::Vector&lt;3&gt;&amp; tr )</a>, <a class="el" href="PortingFunctions_8h.html#a5cb8e3449ba95d9086b6e04cbe4b5588" title="Extract the translational part of an SE(3) matrix. ">transl( const TooN::Matrix&lt;4,4&gt;&amp; T )</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="PortingFunctions_8cpp_source.html#l00075">75</a> of file <a class="el" href="PortingFunctions_8cpp_source.html">PortingFunctions.cpp</a>.</p>
 

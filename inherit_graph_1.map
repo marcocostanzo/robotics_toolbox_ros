@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classQuaternion.html" title="Quaternion" alt="" coords="5,5,91,32"/>
-<area shape="rect" id="node2" href="$classUnitQuaternion.html" title="UnitQuaternion" alt="" coords="139,5,248,32"/>
+<area shape="rect" id="node1" href="$classQuaternion.html" title="Quaternion class to represent a Quaternion. " alt="" coords="5,5,91,32"/>
+<area shape="rect" id="node2" href="$classUnitQuaternion.html" title="UnitQuaternion class to represent a Rotation. " alt="" coords="139,5,248,32"/>
 </map>
