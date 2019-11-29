@@ -92,6 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Quaternion.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>C++ implementation of <a class="el" href="classQuaternion.html" title="Quaternion class to represent a Quaternion. ">Quaternion</a> class from the Matlab Robotic Toolbox by Peter I. Corke.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="PortingFunctions_8h_source.html">PortingFunctions.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Quaternion.h:</div>
@@ -107,7 +110,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Quaternion_8h__dep__incl.png" border="0" usemap="#robotics__toolbox__ros_2include_2Quaternion_8hdep" alt=""/></div>
 <map name="robotics__toolbox__ros_2include_2Quaternion_8hdep" id="robotics__toolbox__ros_2include_2Quaternion_8hdep">
-<area shape="rect" id="node2" href="UnitQuaternion_8h.html" title="robotics_toolbox_ros\l/include/UnitQuaternion.h" alt="" coords="5,95,175,136"/>
+<area shape="rect" id="node2" href="UnitQuaternion_8h.html" title="C++ implementation of UnitQuaternion class from the Matlab Robotic Toolbox by Peter I..." alt="" coords="5,95,175,136"/>
 <area shape="rect" id="node4" href="Quaternion_8cpp.html" title="robotics_toolbox_ros\l/src/Quaternion.cpp" alt="" coords="199,95,341,136"/>
 <area shape="rect" id="node3" href="UnitQuaternion_8cpp.html" title="robotics_toolbox_ros\l/src/UnitQuaternion.cpp" alt="" coords="10,184,170,225"/>
 </map>
@@ -124,55 +127,83 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab8b83085e5a4ae3e27f2685ee41c275a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#ab8b83085e5a4ae3e27f2685ee41c275a">conj</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q)</td></tr>
+<tr class="memdesc:ab8b83085e5a4ae3e27f2685ee41c275a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conjugate of q.  <a href="#ab8b83085e5a4ae3e27f2685ee41c275a">More...</a><br /></td></tr>
 <tr class="separator:ab8b83085e5a4ae3e27f2685ee41c275a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a489590942489f3cb9ea4626319be4868"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a489590942489f3cb9ea4626319be4868">inv</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q)</td></tr>
+<tr class="memdesc:a489590942489f3cb9ea4626319be4868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse of q.  <a href="#a489590942489f3cb9ea4626319be4868">More...</a><br /></td></tr>
 <tr class="separator:a489590942489f3cb9ea4626319be4868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ce39aab5e5b786af37f50a2133767f3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a7ce39aab5e5b786af37f50a2133767f3">norm</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q)</td></tr>
+<tr class="memdesc:a7ce39aab5e5b786af37f50a2133767f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">norm of q  <a href="#a7ce39aab5e5b786af37f50a2133767f3">More...</a><br /></td></tr>
 <tr class="separator:a7ce39aab5e5b786af37f50a2133767f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad163902223da93572a50fd032891ca45"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#ad163902223da93572a50fd032891ca45">norm2</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q)</td></tr>
+<tr class="memdesc:ad163902223da93572a50fd032891ca45"><td class="mdescLeft">&#160;</td><td class="mdescRight">square norm of q  <a href="#ad163902223da93572a50fd032891ca45">More...</a><br /></td></tr>
 <tr class="separator:ad163902223da93572a50fd032891ca45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf73f0111af7f461a5a3ebe19bbacb0"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#abcf73f0111af7f461a5a3ebe19bbacb0">matrix</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q)</td></tr>
+<tr class="memdesc:abcf73f0111af7f461a5a3ebe19bbacb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix representation.  <a href="#abcf73f0111af7f461a5a3ebe19bbacb0">More...</a><br /></td></tr>
 <tr class="separator:abcf73f0111af7f461a5a3ebe19bbacb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99999cd9d4d64e3c11a71cdbd4da11e0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a99999cd9d4d64e3c11a71cdbd4da11e0">inner</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:a99999cd9d4d64e3c11a71cdbd4da11e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">inner product  <a href="#a99999cd9d4d64e3c11a71cdbd4da11e0">More...</a><br /></td></tr>
 <tr class="separator:a99999cd9d4d64e3c11a71cdbd4da11e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44da49708ded5fd5fd3323bda27383ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a44da49708ded5fd5fd3323bda27383ea">mtimes</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:a44da49708ded5fd5fd3323bda27383ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply a quaternion object.  <a href="#a44da49708ded5fd5fd3323bda27383ea">More...</a><br /></td></tr>
 <tr class="separator:a44da49708ded5fd5fd3323bda27383ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a874a94cd39498663ba0761914a931f88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a874a94cd39498663ba0761914a931f88">mtimes</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, double s)</td></tr>
+<tr class="memdesc:a874a94cd39498663ba0761914a931f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply a quaternion object.  <a href="#a874a94cd39498663ba0761914a931f88">More...</a><br /></td></tr>
 <tr class="separator:a874a94cd39498663ba0761914a931f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa68b299fa6ad3e5297cdb3aea9f50788"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#aa68b299fa6ad3e5297cdb3aea9f50788">mtimes</a> (double s, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:aa68b299fa6ad3e5297cdb3aea9f50788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply a quaternion object.  <a href="#aa68b299fa6ad3e5297cdb3aea9f50788">More...</a><br /></td></tr>
 <tr class="separator:aa68b299fa6ad3e5297cdb3aea9f50788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a416cdd0c0d5f73045e8800eed04838"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a7a416cdd0c0d5f73045e8800eed04838">operator*</a> (const double &amp;s, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:a7a416cdd0c0d5f73045e8800eed04838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply a quaternion object.  <a href="#a7a416cdd0c0d5f73045e8800eed04838">More...</a><br /></td></tr>
 <tr class="separator:a7a416cdd0c0d5f73045e8800eed04838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11fdf48cd1bcce7f01198a9a6e673a78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a11fdf48cd1bcce7f01198a9a6e673a78">mrdivide</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:a11fdf48cd1bcce7f01198a9a6e673a78"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classQuaternion.html" title="Quaternion class to represent a Quaternion. ">Quaternion</a> quotient.  <a href="#a11fdf48cd1bcce7f01198a9a6e673a78">More...</a><br /></td></tr>
 <tr class="separator:a11fdf48cd1bcce7f01198a9a6e673a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaec18c93a2a4c32432fc5bdb1add0d4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#aaec18c93a2a4c32432fc5bdb1add0d4e">mrdivide</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, double s)</td></tr>
+<tr class="memdesc:aaec18c93a2a4c32432fc5bdb1add0d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classQuaternion.html" title="Quaternion class to represent a Quaternion. ">Quaternion</a> quotient.  <a href="#aaec18c93a2a4c32432fc5bdb1add0d4e">More...</a><br /></td></tr>
 <tr class="separator:aaec18c93a2a4c32432fc5bdb1add0d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab23181344555445facaf49d505ef3eba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#ab23181344555445facaf49d505ef3eba">mpower</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, int p)</td></tr>
+<tr class="memdesc:ab23181344555445facaf49d505ef3eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raise quaternion to integer power.  <a href="#ab23181344555445facaf49d505ef3eba">More...</a><br /></td></tr>
 <tr class="separator:ab23181344555445facaf49d505ef3eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d54144d7cb7b4cde8aeb793923b6e1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a1d54144d7cb7b4cde8aeb793923b6e1d">plus</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:a1d54144d7cb7b4cde8aeb793923b6e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add quaternions.  <a href="#a1d54144d7cb7b4cde8aeb793923b6e1d">More...</a><br /></td></tr>
 <tr class="separator:a1d54144d7cb7b4cde8aeb793923b6e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90e75a7260a6cbc80538dcc1e56c5741"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a90e75a7260a6cbc80538dcc1e56c5741">plus</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, const TooN::Vector&lt; 4 &gt; &amp;q2_vec)</td></tr>
+<tr class="memdesc:a90e75a7260a6cbc80538dcc1e56c5741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add quaternions.  <a href="#a90e75a7260a6cbc80538dcc1e56c5741">More...</a><br /></td></tr>
 <tr class="separator:a90e75a7260a6cbc80538dcc1e56c5741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c8de2a368a986264d469bfd83e5c534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a3c8de2a368a986264d469bfd83e5c534">plus</a> (const TooN::Vector&lt; 4 &gt; &amp;q1_vec, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:a3c8de2a368a986264d469bfd83e5c534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add quaternions.  <a href="#a3c8de2a368a986264d469bfd83e5c534">More...</a><br /></td></tr>
 <tr class="separator:a3c8de2a368a986264d469bfd83e5c534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad29bd67468a5eda2725f364a367774dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#ad29bd67468a5eda2725f364a367774dc">minus</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q)</td></tr>
+<tr class="memdesc:ad29bd67468a5eda2725f364a367774dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract quaternions.  <a href="#ad29bd67468a5eda2725f364a367774dc">More...</a><br /></td></tr>
 <tr class="separator:ad29bd67468a5eda2725f364a367774dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5992e1b31b9fa9e6d4d302d0e9eded"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a3d5992e1b31b9fa9e6d4d302d0e9eded">minus</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:a3d5992e1b31b9fa9e6d4d302d0e9eded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract quaternions.  <a href="#a3d5992e1b31b9fa9e6d4d302d0e9eded">More...</a><br /></td></tr>
 <tr class="separator:a3d5992e1b31b9fa9e6d4d302d0e9eded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a671e81b2867bbc4f0579b6fb560c6091"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a671e81b2867bbc4f0579b6fb560c6091">minus</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, const TooN::Vector&lt; 4 &gt; &amp;q2_vec)</td></tr>
+<tr class="memdesc:a671e81b2867bbc4f0579b6fb560c6091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract quaternions.  <a href="#a671e81b2867bbc4f0579b6fb560c6091">More...</a><br /></td></tr>
 <tr class="separator:a671e81b2867bbc4f0579b6fb560c6091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f6385f7dbff1354d4ebd8ecbe6cb180"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a2f6385f7dbff1354d4ebd8ecbe6cb180">minus</a> (const TooN::Vector&lt; 4 &gt; &amp;q1_vec, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:a2f6385f7dbff1354d4ebd8ecbe6cb180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract quaternions.  <a href="#a2f6385f7dbff1354d4ebd8ecbe6cb180">More...</a><br /></td></tr>
 <tr class="separator:a2f6385f7dbff1354d4ebd8ecbe6cb180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba18bd04dafe41bcefb6314a81afd4c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#aba18bd04dafe41bcefb6314a81afd4c7">isequal</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:aba18bd04dafe41bcefb6314a81afd4c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test quaternion element equality.  <a href="#aba18bd04dafe41bcefb6314a81afd4c7">More...</a><br /></td></tr>
 <tr class="separator:aba18bd04dafe41bcefb6314a81afd4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f718279bfb71a8af4ecc7a4a6a00f05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a3f718279bfb71a8af4ecc7a4a6a00f05">eq</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:a3f718279bfb71a8af4ecc7a4a6a00f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test quaternion element equality.  <a href="#a3f718279bfb71a8af4ecc7a4a6a00f05">More...</a><br /></td></tr>
 <tr class="separator:a3f718279bfb71a8af4ecc7a4a6a00f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25d12dc44e074109e07c6893a0773087"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a25d12dc44e074109e07c6893a0773087">ne</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q1, const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q2)</td></tr>
+<tr class="memdesc:a25d12dc44e074109e07c6893a0773087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test quaternion inequality.  <a href="#a25d12dc44e074109e07c6893a0773087">More...</a><br /></td></tr>
 <tr class="separator:a25d12dc44e074109e07c6893a0773087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2245ff63a6da2ae4eab6a478922c2391"><td class="memItemLeft" align="right" valign="top">TooN::Vector&lt; 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Quaternion_8h.html#a2245ff63a6da2ae4eab6a478922c2391">getDouble</a> (const <a class="el" href="classQuaternion.html">Quaternion</a> &amp;q)</td></tr>
+<tr class="memdesc:a2245ff63a6da2ae4eab6a478922c2391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a quaternion to a 4-element vector.  <a href="#a2245ff63a6da2ae4eab6a478922c2391">More...</a><br /></td></tr>
 <tr class="separator:a2245ff63a6da2ae4eab6a478922c2391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>C++ implementation of <a class="el" href="classQuaternion.html" title="Quaternion class to represent a Quaternion. ">Quaternion</a> class from the Matlab Robotic Toolbox by Peter I. Corke. </p>
+
+<p>Definition in file <a class="el" href="Quaternion_8h_source.html">Quaternion.h</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ab8b83085e5a4ae3e27f2685ee41c275a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -186,6 +217,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Conjugate of q. </p>
 
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00465">465</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
@@ -215,6 +248,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Test quaternion element equality. </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00586">586</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -232,6 +267,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Convert a quaternion to a 4-element vector. </p>
+<p>V = Q.double() is a Vector&lt;4&gt; comprising the quaternion elements, scalar then vector.</p>
+<p>[s vx vy vz]. </p>
 
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00602">602</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
@@ -261,6 +300,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>inner product </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00489">489</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -278,6 +319,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Inverse of q. </p>
 
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00469">469</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
@@ -307,6 +350,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Test quaternion element equality. </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00583">583</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -325,6 +370,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Matrix representation. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQuaternion.html#a5b95a39107ab7c86bee8a69df77095e8">Quaternion::matrix()</a> </dd></dl>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00484">484</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -342,6 +390,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Subtract quaternions. </p>
 
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00557">557</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
@@ -371,6 +421,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Subtract quaternions. </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00560">560</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -398,6 +450,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Subtract quaternions. </p>
 
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00563">563</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
@@ -427,6 +481,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Subtract quaternions. </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00566">566</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -454,6 +510,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Raise quaternion to integer power. </p>
 
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00528">528</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
@@ -483,6 +541,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="classQuaternion.html" title="Quaternion class to represent a Quaternion. ">Quaternion</a> quotient. </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00514">514</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -510,6 +570,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="classQuaternion.html" title="Quaternion class to represent a Quaternion. ">Quaternion</a> quotient. </p>
 
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00517">517</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
@@ -539,6 +601,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Multiply a quaternion object. </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00494">494</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -566,6 +630,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Multiply a quaternion object. </p>
 
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00497">497</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
@@ -595,6 +661,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Multiply a quaternion object. </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00500">500</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -623,6 +691,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Test quaternion inequality. </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00594">594</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -641,6 +711,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>norm of q </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00474">474</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -658,6 +730,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>square norm of q </p>
 
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00479">479</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
@@ -687,6 +761,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Multiply a quaternion object. </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00509">509</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -714,6 +790,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Add quaternions. </p>
 
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00536">536</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
@@ -743,6 +821,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Add quaternions. </p>
+
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00539">539</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 
 </div>
@@ -770,6 +850,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Add quaternions. </p>
 
 <p>Definition at line <a class="el" href="Quaternion_8cpp_source.html#l00542">542</a> of file <a class="el" href="Quaternion_8cpp_source.html">Quaternion.cpp</a>.</p>
 

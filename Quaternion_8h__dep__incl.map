@@ -1,5 +1,5 @@
 <map id="robotics_toolbox_ros/include/Quaternion.h" name="robotics_toolbox_ros/include/Quaternion.h">
-<area shape="rect" id="node2" href="$UnitQuaternion_8h.html" title="robotics_toolbox_ros\l/include/UnitQuaternion.h" alt="" coords="5,95,175,136"/>
+<area shape="rect" id="node2" href="$UnitQuaternion_8h.html" title="C++ implementation of UnitQuaternion class from the Matlab Robotic Toolbox by Peter I..." alt="" coords="5,95,175,136"/>
 <area shape="rect" id="node4" href="$Quaternion_8cpp.html" title="robotics_toolbox_ros\l/src/Quaternion.cpp" alt="" coords="199,95,341,136"/>
 <area shape="rect" id="node3" href="$UnitQuaternion_8cpp.html" title="robotics_toolbox_ros\l/src/UnitQuaternion.cpp" alt="" coords="10,184,170,225"/>
 </map>
