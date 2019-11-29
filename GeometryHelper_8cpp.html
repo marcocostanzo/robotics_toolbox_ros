@@ -97,7 +97,7 @@ Include dependency graph for GeometryHelper.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="GeometryHelper_8cpp__incl.png" border="0" usemap="#robotics__toolbox__ros_2src_2GeometryHelper_8cpp" alt=""/></div>
 <map name="robotics__toolbox__ros_2src_2GeometryHelper_8cpp" id="robotics__toolbox__ros_2src_2GeometryHelper_8cpp">
-<area shape="rect" id="node2" href="GeometryHelper_8h.html" title="GeometryHelper.h" alt="" coords="53,95,181,121"/>
+<area shape="rect" id="node2" href="GeometryHelper_8h.html" title="Contains helper functions for geometry. " alt="" coords="53,95,181,121"/>
 </map>
 </div>
 </div>
@@ -116,14 +116,19 @@ Functions</h2></td></tr>
 <tr class="memitem:a4155756c46e18729bda419103ee3c192"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8cpp.html#a4155756c46e18729bda419103ee3c192">sum</a> (const Vector&lt;&gt; &amp;v)</td></tr>
 <tr class="separator:a4155756c46e18729bda419103ee3c192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e761d9b95cd658acafbc148c013b55"><td class="memItemLeft" align="right" valign="top">Matrix&lt; 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8cpp.html#ae6e761d9b95cd658acafbc148c013b55">rotx</a> (double angle)</td></tr>
+<tr class="memdesc:ae6e761d9b95cd658acafbc148c013b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotation around x-axis  <a href="#ae6e761d9b95cd658acafbc148c013b55">More...</a><br /></td></tr>
 <tr class="separator:ae6e761d9b95cd658acafbc148c013b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbf139e71ec9b1bed9c0bb140ba278f4"><td class="memItemLeft" align="right" valign="top">Matrix&lt; 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8cpp.html#adbf139e71ec9b1bed9c0bb140ba278f4">roty</a> (double angle)</td></tr>
+<tr class="memdesc:adbf139e71ec9b1bed9c0bb140ba278f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotation around y-axis  <a href="#adbf139e71ec9b1bed9c0bb140ba278f4">More...</a><br /></td></tr>
 <tr class="separator:adbf139e71ec9b1bed9c0bb140ba278f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96d37962febbbb8f96ca19ea1855a466"><td class="memItemLeft" align="right" valign="top">Matrix&lt; 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8cpp.html#a96d37962febbbb8f96ca19ea1855a466">rotz</a> (double angle)</td></tr>
+<tr class="memdesc:a96d37962febbbb8f96ca19ea1855a466"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotation around z-axis  <a href="#a96d37962febbbb8f96ca19ea1855a466">More...</a><br /></td></tr>
 <tr class="separator:a96d37962febbbb8f96ca19ea1855a466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab790486b8ce6f79f72c46383407cb186"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8cpp.html#ab790486b8ce6f79f72c46383407cb186">sign</a> (double n, int zero_out)</td></tr>
+<tr class="memdesc:ab790486b8ce6f79f72c46383407cb186"><td class="mdescLeft">&#160;</td><td class="mdescRight">signum  <a href="#ab790486b8ce6f79f72c46383407cb186">More...</a><br /></td></tr>
 <tr class="separator:ab790486b8ce6f79f72c46383407cb186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a81d8acdec15d68e9e67a0c75fe4f90"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8cpp.html#a8a81d8acdec15d68e9e67a0c75fe4f90">sign</a> (double n)</td></tr>
+<tr class="memdesc:a8a81d8acdec15d68e9e67a0c75fe4f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">signum  <a href="#a8a81d8acdec15d68e9e67a0c75fe4f90">More...</a><br /></td></tr>
 <tr class="separator:a8a81d8acdec15d68e9e67a0c75fe4f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a790588c21a437911ddb5716449f3cdf6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8cpp.html#a790588c21a437911ddb5716449f3cdf6">index_max</a> (const Vector&lt;&gt; &amp;v)</td></tr>
 <tr class="separator:a790588c21a437911ddb5716449f3cdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -372,7 +377,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>rotx(angle) is the SO(3) matrix transformation that rotates a point around the x-axis for an angle </p>
+
+<p>rotation around x-axis </p>
+<p>rotx(angle) is the SO(3) matrix transformation that rotates a point around the x-axis for an angle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>rotation angle. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="GeometryHelper_8cpp_source.html#l00075">75</a> of file <a class="el" href="GeometryHelper_8cpp_source.html">GeometryHelper.cpp</a>.</p>
 
@@ -391,7 +404,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>roty(angle) is the SO(3) matrix transformation that rotates a point around the y-axis for an angle </p>
+
+<p>rotation around y-axis </p>
+<p>roty(angle) is the SO(3) matrix transformation that rotates a point around the y-axis for an angle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>rotation angle. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="GeometryHelper_8cpp_source.html#l00085">85</a> of file <a class="el" href="GeometryHelper_8cpp_source.html">GeometryHelper.cpp</a>.</p>
 
@@ -410,7 +431,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>rotz(angle) is the SO(3) matrix transformation that rotates a point around the z-axis for an angle </p>
+
+<p>rotation around z-axis </p>
+<p>rotz(angle) is the SO(3) matrix transformation that rotates a point around the z-axis for an angle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>rotation angle. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="GeometryHelper_8cpp_source.html#l00095">95</a> of file <a class="el" href="GeometryHelper_8cpp_source.html">GeometryHelper.cpp</a>.</p>
 
@@ -439,7 +468,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>SIGN Signum function. sign(n, zero_out) returns 1 if n is greater than zero, zero_out if it equals zero and -1 if it is less than zero. </p>
+
+<p>signum </p>
+<p>SIGN Signum function. sign(n, zero_out) returns 1 if n is greater than zero, zero_out if it equals zero and -1 if it is less than zero.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>input </td></tr>
+    <tr><td class="paramname">zero_out</td><td>output when n=0 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="GeometryHelper_8cpp_source.html#l00106">106</a> of file <a class="el" href="GeometryHelper_8cpp_source.html">GeometryHelper.cpp</a>.</p>
 
@@ -458,7 +496,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>SIGN Signum function. sign(n) returns 1 if n is greater than zero, 0 if it equals zero and -1 if it is less than zero. </p>
+
+<p>signum </p>
+<p>SIGN Signum function. sign(n) returns 1 if n is greater than zero, 0 if it equals zero and -1 if it is less than zero.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>input </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="GeometryHelper_8cpp_source.html#l00113">113</a> of file <a class="el" href="GeometryHelper_8cpp_source.html">GeometryHelper.cpp</a>.</p>
 

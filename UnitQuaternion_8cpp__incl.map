@@ -2,6 +2,6 @@
 <area shape="rect" id="node2" href="$UnitQuaternion_8h.html" title="UnitQuaternion.h" alt="" coords="75,95,195,121"/>
 <area shape="rect" id="node3" href="$Quaternion_8h.html" title="Quaternion.h" alt="" coords="33,169,129,196"/>
 <area shape="rect" id="node8" href="$AngVec_8h.html" title="AngVec.h" alt="" coords="161,244,239,271"/>
-<area shape="rect" id="node4" href="$PortingFunctions_8h.html" title="PortingFunctions.h" alt="" coords="5,244,136,271"/>
-<area shape="rect" id="node5" href="$GeometryHelper_8h.html" title="GeometryHelper.h" alt="" coords="9,319,137,345"/>
+<area shape="rect" id="node4" href="$PortingFunctions_8h.html" title="C++ implementation of some functions from the Matlab Robotic Toolbox by Peter I. Corke. " alt="" coords="5,244,136,271"/>
+<area shape="rect" id="node5" href="$GeometryHelper_8h.html" title="Contains helper functions for geometry. " alt="" coords="9,319,137,345"/>
 </map>

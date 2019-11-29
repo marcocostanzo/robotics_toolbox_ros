@@ -1,6 +1,6 @@
 <map id="robotics_toolbox_ros/include/UnitQuaternion.h" name="robotics_toolbox_ros/include/UnitQuaternion.h">
 <area shape="rect" id="node2" href="$Quaternion_8h.html" title="Quaternion.h" alt="" coords="33,95,129,121"/>
 <area shape="rect" id="node7" href="$AngVec_8h.html" title="AngVec.h" alt="" coords="161,169,239,196"/>
-<area shape="rect" id="node3" href="$PortingFunctions_8h.html" title="PortingFunctions.h" alt="" coords="5,169,136,196"/>
-<area shape="rect" id="node4" href="$GeometryHelper_8h.html" title="GeometryHelper.h" alt="" coords="9,244,137,271"/>
+<area shape="rect" id="node3" href="$PortingFunctions_8h.html" title="C++ implementation of some functions from the Matlab Robotic Toolbox by Peter I. Corke. " alt="" coords="5,169,136,196"/>
+<area shape="rect" id="node4" href="$GeometryHelper_8h.html" title="Contains helper functions for geometry. " alt="" coords="9,244,137,271"/>
 </map>

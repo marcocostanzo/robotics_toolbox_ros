@@ -92,6 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">GeometryHelper.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains helper functions for geometry.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;TooN/TooN.h&quot;</code><br />
 <code>#include &quot;TooN/SVD.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -104,7 +107,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="GeometryHelper_8h__dep__incl.png" border="0" usemap="#robotics__toolbox__ros_2include_2GeometryHelper_8hdep" alt=""/></div>
 <map name="robotics__toolbox__ros_2include_2GeometryHelper_8hdep" id="robotics__toolbox__ros_2include_2GeometryHelper_8hdep">
-<area shape="rect" id="node2" href="PortingFunctions_8h.html" title="robotics_toolbox_ros\l/include/PortingFunctions.h" alt="" coords="180,95,360,136"/>
+<area shape="rect" id="node2" href="PortingFunctions_8h.html" title="C++ implementation of some functions from the Matlab Robotic Toolbox by Peter I. Corke. " alt="" coords="180,95,360,136"/>
 <area shape="rect" id="node8" href="GeometryHelper_8cpp.html" title="robotics_toolbox_ros\l/src/GeometryHelper.cpp" alt="" coords="385,95,553,136"/>
 <area shape="rect" id="node3" href="Quaternion_8h.html" title="robotics_toolbox_ros\l/include/Quaternion.h" alt="" coords="107,184,252,225"/>
 <area shape="rect" id="node7" href="PortingFunctions_8cpp.html" title="robotics_toolbox_ros\l/src/PortingFunctions.cpp" alt="" coords="277,184,447,225"/>
@@ -124,39 +127,59 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ade63b54f51d8a1fe36f831c163e0b5ef"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#ade63b54f51d8a1fe36f831c163e0b5ef">norm</a> (const TooN::Matrix&lt; 3 &gt; &amp;M)</td></tr>
+<tr class="memdesc:ade63b54f51d8a1fe36f831c163e0b5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higer singular value.  <a href="#ade63b54f51d8a1fe36f831c163e0b5ef">More...</a><br /></td></tr>
 <tr class="separator:ade63b54f51d8a1fe36f831c163e0b5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24b48b02cadcd889bafb3e15dddf1911"><td class="memItemLeft" align="right" valign="top">TooN::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#a24b48b02cadcd889bafb3e15dddf1911">abs</a> (const TooN::Vector&lt;&gt; &amp;v)</td></tr>
+<tr class="memdesc:a24b48b02cadcd889bafb3e15dddf1911"><td class="mdescLeft">&#160;</td><td class="mdescRight">abs element wise  <a href="#a24b48b02cadcd889bafb3e15dddf1911">More...</a><br /></td></tr>
 <tr class="separator:a24b48b02cadcd889bafb3e15dddf1911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56bf64a5a2c2e4de9eaeb26884a85e47"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#a56bf64a5a2c2e4de9eaeb26884a85e47">max</a> (const TooN::Vector&lt;&gt; &amp;v)</td></tr>
+<tr class="memdesc:a56bf64a5a2c2e4de9eaeb26884a85e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">max of a vector  <a href="#a56bf64a5a2c2e4de9eaeb26884a85e47">More...</a><br /></td></tr>
 <tr class="separator:a56bf64a5a2c2e4de9eaeb26884a85e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4dd880e64ba2e68bfeb33b70d4afe6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#a6d4dd880e64ba2e68bfeb33b70d4afe6">min</a> (const TooN::Vector&lt;&gt; &amp;v)</td></tr>
+<tr class="memdesc:a6d4dd880e64ba2e68bfeb33b70d4afe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">min of a vector  <a href="#a6d4dd880e64ba2e68bfeb33b70d4afe6">More...</a><br /></td></tr>
 <tr class="separator:a6d4dd880e64ba2e68bfeb33b70d4afe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbd50d3831c5b5de870d272b910e75e1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#acbd50d3831c5b5de870d272b910e75e1">sum</a> (const TooN::Vector&lt;&gt; &amp;v)</td></tr>
+<tr class="memdesc:acbd50d3831c5b5de870d272b910e75e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">sum of all elements  <a href="#acbd50d3831c5b5de870d272b910e75e1">More...</a><br /></td></tr>
 <tr class="separator:acbd50d3831c5b5de870d272b910e75e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c9b090975f47d500fb1a81cc99cec37"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#a8c9b090975f47d500fb1a81cc99cec37">rotx</a> (double angle)</td></tr>
+<tr class="memdesc:a8c9b090975f47d500fb1a81cc99cec37"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotation around x-axis  <a href="#a8c9b090975f47d500fb1a81cc99cec37">More...</a><br /></td></tr>
 <tr class="separator:a8c9b090975f47d500fb1a81cc99cec37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d2ab7e3e6b5f53a391d8f1c4b41e5a0"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#a6d2ab7e3e6b5f53a391d8f1c4b41e5a0">roty</a> (double angle)</td></tr>
+<tr class="memdesc:a6d2ab7e3e6b5f53a391d8f1c4b41e5a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotation around y-axis  <a href="#a6d2ab7e3e6b5f53a391d8f1c4b41e5a0">More...</a><br /></td></tr>
 <tr class="separator:a6d2ab7e3e6b5f53a391d8f1c4b41e5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1b9e5311ec8fd3dfe21e4a8f18db81c"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#af1b9e5311ec8fd3dfe21e4a8f18db81c">rotz</a> (double angle)</td></tr>
+<tr class="memdesc:af1b9e5311ec8fd3dfe21e4a8f18db81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotation around z-axis  <a href="#af1b9e5311ec8fd3dfe21e4a8f18db81c">More...</a><br /></td></tr>
 <tr class="separator:af1b9e5311ec8fd3dfe21e4a8f18db81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab790486b8ce6f79f72c46383407cb186"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#ab790486b8ce6f79f72c46383407cb186">sign</a> (double n, int zero_out)</td></tr>
+<tr class="memdesc:ab790486b8ce6f79f72c46383407cb186"><td class="mdescLeft">&#160;</td><td class="mdescRight">signum  <a href="#ab790486b8ce6f79f72c46383407cb186">More...</a><br /></td></tr>
 <tr class="separator:ab790486b8ce6f79f72c46383407cb186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a81d8acdec15d68e9e67a0c75fe4f90"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#a8a81d8acdec15d68e9e67a0c75fe4f90">sign</a> (double n)</td></tr>
+<tr class="memdesc:a8a81d8acdec15d68e9e67a0c75fe4f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">signum  <a href="#a8a81d8acdec15d68e9e67a0c75fe4f90">More...</a><br /></td></tr>
 <tr class="separator:a8a81d8acdec15d68e9e67a0c75fe4f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a7567ceb54560485c48a08ba2b9adaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#a1a7567ceb54560485c48a08ba2b9adaa">index_max</a> (const TooN::Vector&lt;&gt; &amp;v)</td></tr>
+<tr class="memdesc:a1a7567ceb54560485c48a08ba2b9adaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the max  <a href="#a1a7567ceb54560485c48a08ba2b9adaa">More...</a><br /></td></tr>
 <tr class="separator:a1a7567ceb54560485c48a08ba2b9adaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc952dbc8d29fbe9a030efba19ec91d"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#a4fc952dbc8d29fbe9a030efba19ec91d">pinv_DLS</a> (const TooN::Matrix&lt;&gt; &amp;M, double damping)</td></tr>
+<tr class="memdesc:a4fc952dbc8d29fbe9a030efba19ec91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">pinv DLS  <a href="#a4fc952dbc8d29fbe9a030efba19ec91d">More...</a><br /></td></tr>
 <tr class="separator:a4fc952dbc8d29fbe9a030efba19ec91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a625809db5db21b664c4b2a4cdd7945a1"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#a625809db5db21b664c4b2a4cdd7945a1">nullSpaceProj</a> (const TooN::Matrix&lt;&gt; &amp;M, const TooN::Matrix&lt;&gt; &amp;M_pinv)</td></tr>
+<tr class="memdesc:a625809db5db21b664c4b2a4cdd7945a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">null space projector  <a href="#a625809db5db21b664c4b2a4cdd7945a1">More...</a><br /></td></tr>
 <tr class="separator:a625809db5db21b664c4b2a4cdd7945a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a196ef6f9eb15898b8195daa9ed04489d"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#a196ef6f9eb15898b8195daa9ed04489d">nullSpaceProj</a> (const TooN::Matrix&lt;&gt; &amp;M, double condition_number=20.0)</td></tr>
+<tr class="memdesc:a196ef6f9eb15898b8195daa9ed04489d"><td class="mdescLeft">&#160;</td><td class="mdescRight">null space projector  <a href="#a196ef6f9eb15898b8195daa9ed04489d">More...</a><br /></td></tr>
 <tr class="separator:a196ef6f9eb15898b8195daa9ed04489d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55f5753450009fb8033f5cf41db0ce4d"><td class="memItemLeft" align="right" valign="top">TooN::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#a55f5753450009fb8033f5cf41db0ce4d">polydiff</a> (const TooN::Vector&lt;&gt; &amp;coeff)</td></tr>
+<tr class="memdesc:a55f5753450009fb8033f5cf41db0ce4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">derivate a poly  <a href="#a55f5753450009fb8033f5cf41db0ce4d">More...</a><br /></td></tr>
 <tr class="separator:a55f5753450009fb8033f5cf41db0ce4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add53ac6f9263fcbf85227c0c97c1213c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GeometryHelper_8h.html#add53ac6f9263fcbf85227c0c97c1213c">polyval</a> (const TooN::Vector&lt;&gt; &amp;coeff, double x)</td></tr>
+<tr class="memdesc:add53ac6f9263fcbf85227c0c97c1213c"><td class="mdescLeft">&#160;</td><td class="mdescRight">devaluate a poly  <a href="#add53ac6f9263fcbf85227c0c97c1213c">More...</a><br /></td></tr>
 <tr class="separator:add53ac6f9263fcbf85227c0c97c1213c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains helper functions for geometry. </p>
+
+<p>Definition in file <a class="el" href="GeometryHelper_8h_source.html">GeometryHelper.h</a>.</p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a901c0422e6bdafc449faaaf0a0fef1d1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +190,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="GeometryHelper_8h_source.html#l00030">30</a> of file <a class="el" href="GeometryHelper_8h_source.html">GeometryHelper.h</a>.</p>
+<p>Definition at line <a class="el" href="GeometryHelper_8h_source.html#l00034">34</a> of file <a class="el" href="GeometryHelper_8h_source.html">GeometryHelper.h</a>.</p>
 
 </div>
 </div>
@@ -185,7 +208,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>abs(V) return the vector composed by the absolute values of the elements of V </p>
+
+<p>abs element wise </p>
+<p>abs(V) return the vector composed by the absolute values of the elements of V.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>a vector. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -202,7 +233,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>index_max( vector ) return the index (0-based) of the first occurrence of the greather element in the vector </p>
+
+<p>find the max </p>
+<p>index_max( vector ) return the index (0-based) of the first occurrence of the greather element in the vector</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>a vector </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -219,7 +258,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>max(V) return the maximun element of V </p>
+
+<p>max of a vector </p>
+<p>max(V) return the maximun element of V</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>a vector. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -236,7 +283,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>min(V) return the minimum element of V </p>
+
+<p>min of a vector </p>
+<p>min(V) return the minimum element of V</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>a vector. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -253,7 +308,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>norm(M) is the norm of the Matrix M computed as the higer singular value </p>
+
+<p>Higer singular value. </p>
+<p>norm(M) is the norm of the Matrix M computed as the higer singular value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>a matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>higer singular value of M </dd></dl>
 
 </div>
 </div>
@@ -280,7 +344,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute a Projector in the null space of M </p>
+
+<p>null space projector </p>
+<p>Compute a Projector in the null space of M This overload takes pinv(M) as second input to improve performance.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>a matrix </td></tr>
+    <tr><td class="paramname">M_pinv</td><td>pinv of M </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -308,6 +381,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>null space projector </p>
+<p>Compute a Projector in the null space of M This overload internally compute pinv(M) using condition_number.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>a matrix </td></tr>
+    <tr><td class="paramname">condition_number</td><td>for the pinv (default 20) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a4fc952dbc8d29fbe9a030efba19ec91d"></a>
@@ -333,7 +416,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute pinv as Damped Least Square (DLS) </p>
+
+<p>pinv DLS </p>
+<p>Compute pinv as Damped Least Square (DLS)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td>a matrix </td></tr>
+    <tr><td class="paramname">damping</td><td>damping factor for the DLS </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -350,7 +442,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute the derivate of a poly coeff = [a_n a_n_1 a_n_2 ... a_0] p = a_n*x^n + a_n_1*x^n_1 + ... + a_1*x + a_0 </p>
+
+<p>derivate a poly </p>
+<p>Compute the derivate of a poly</p>
+<p>coeff = [a_n a_n_1 a_n_2 ... a_0]</p>
+<p>p = a_n*x^n + a_n_1*x^n_1 + ... + a_1*x + a_0</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coeff</td><td>vector representing the coefficient of the poly </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -377,7 +479,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Evaluate the poly in the point x coeff = [a_n a_n_1 a_n_2 ... a_0] p = a_n*x^n + a_n_1*x^n_1 + ... + a_1*x + a_0 </p>
+
+<p>devaluate a poly </p>
+<p>Evaluate the poly in the point x</p>
+<p>coeff = [a_n a_n_1 a_n_2 ... a_0]</p>
+<p>p = a_n*x^n + a_n_1*x^n_1 + ... + a_1*x + a_0</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coeff</td><td>vector representing the coefficient of the poly </td></tr>
+    <tr><td class="paramname">x</td><td>variable to use to evaluate the poly </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -394,7 +507,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>rotx(angle) is the SO(3) matrix transformation that rotates a point around the x-axis for an angle </p>
+
+<p>rotation around x-axis </p>
+<p>rotx(angle) is the SO(3) matrix transformation that rotates a point around the x-axis for an angle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>rotation angle. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="GeometryHelper_8cpp_source.html#l00075">75</a> of file <a class="el" href="GeometryHelper_8cpp_source.html">GeometryHelper.cpp</a>.</p>
 
@@ -413,7 +534,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>roty(angle) is the SO(3) matrix transformation that rotates a point around the y-axis for an angle </p>
+
+<p>rotation around y-axis </p>
+<p>roty(angle) is the SO(3) matrix transformation that rotates a point around the y-axis for an angle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>rotation angle. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="GeometryHelper_8cpp_source.html#l00085">85</a> of file <a class="el" href="GeometryHelper_8cpp_source.html">GeometryHelper.cpp</a>.</p>
 
@@ -432,7 +561,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>rotz(angle) is the SO(3) matrix transformation that rotates a point around the z-axis for an angle </p>
+
+<p>rotation around z-axis </p>
+<p>rotz(angle) is the SO(3) matrix transformation that rotates a point around the z-axis for an angle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>rotation angle. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="GeometryHelper_8cpp_source.html#l00095">95</a> of file <a class="el" href="GeometryHelper_8cpp_source.html">GeometryHelper.cpp</a>.</p>
 
@@ -461,7 +598,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>SIGN Signum function. sign(n, zero_out) returns 1 if n is greater than zero, zero_out if it equals zero and -1 if it is less than zero. </p>
+
+<p>signum </p>
+<p>SIGN Signum function. sign(n, zero_out) returns 1 if n is greater than zero, zero_out if it equals zero and -1 if it is less than zero.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>input </td></tr>
+    <tr><td class="paramname">zero_out</td><td>output when n=0 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="GeometryHelper_8cpp_source.html#l00106">106</a> of file <a class="el" href="GeometryHelper_8cpp_source.html">GeometryHelper.cpp</a>.</p>
 
@@ -480,7 +626,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>SIGN Signum function. sign(n) returns 1 if n is greater than zero, 0 if it equals zero and -1 if it is less than zero. </p>
+
+<p>signum </p>
+<p>SIGN Signum function. sign(n) returns 1 if n is greater than zero, 0 if it equals zero and -1 if it is less than zero.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>input </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="GeometryHelper_8cpp_source.html#l00113">113</a> of file <a class="el" href="GeometryHelper_8cpp_source.html">GeometryHelper.cpp</a>.</p>
 
@@ -499,7 +653,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>sum(V) is the sum of all the elements of a V </p>
+
+<p>sum of all elements </p>
+<p>sum(V) is the sum of all the elements of a V</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>a vector. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

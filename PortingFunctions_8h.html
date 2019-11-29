@@ -92,13 +92,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">PortingFunctions.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>C++ implementation of some functions from the Matlab Robotic Toolbox by Peter I. Corke.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="GeometryHelper_8h_source.html">GeometryHelper.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for PortingFunctions.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="PortingFunctions_8h__incl.png" border="0" usemap="#robotics__toolbox__ros_2include_2PortingFunctions_8h" alt=""/></div>
 <map name="robotics__toolbox__ros_2include_2PortingFunctions_8h" id="robotics__toolbox__ros_2include_2PortingFunctions_8h">
-<area shape="rect" id="node2" href="GeometryHelper_8h.html" title="GeometryHelper.h" alt="" coords="53,95,181,121"/>
+<area shape="rect" id="node2" href="GeometryHelper_8h.html" title="Contains helper functions for geometry. " alt="" coords="53,95,181,121"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -158,31 +161,47 @@ Functions</h2></td></tr>
 <tr class="memdesc:a89f78b717a4fe69efd74977d8194ffe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert rotation and translation to homogeneous transform.  <a href="#a89f78b717a4fe69efd74977d8194ffe4">More...</a><br /></td></tr>
 <tr class="separator:a89f78b717a4fe69efd74977d8194ffe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be3a7cd860db1a68e09937c1cd4f996"><td class="memItemLeft" align="right" valign="top">TooN::Vector&lt; 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#a3be3a7cd860db1a68e09937c1cd4f996">r2rpy</a> (const TooN::Matrix&lt; 3, 3 &gt; &amp;R)</td></tr>
+<tr class="memdesc:a3be3a7cd860db1a68e09937c1cd4f996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation Matrix to roll-pitch-yaw angles.  <a href="#a3be3a7cd860db1a68e09937c1cd4f996">More...</a><br /></td></tr>
 <tr class="separator:a3be3a7cd860db1a68e09937c1cd4f996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa00cdb6a4d58df6b99ad3739c121d004"><td class="memItemLeft" align="right" valign="top">TooN::Vector&lt; 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#aa00cdb6a4d58df6b99ad3739c121d004">tr2rpy</a> (const TooN::Matrix&lt; 4, 4 &gt; &amp;T)</td></tr>
+<tr class="memdesc:aa00cdb6a4d58df6b99ad3739c121d004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Homogeneous Transform Matrix to roll-pitch-yaw angles.  <a href="#aa00cdb6a4d58df6b99ad3739c121d004">More...</a><br /></td></tr>
 <tr class="separator:aa00cdb6a4d58df6b99ad3739c121d004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab427569244f9b5d5b1de82b18e2729a6"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#ab427569244f9b5d5b1de82b18e2729a6">rpy2r</a> (double roll, double pitch, double yaw)</td></tr>
+<tr class="memdesc:ab427569244f9b5d5b1de82b18e2729a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roll-pitch-yaw angles to rotation matrix.  <a href="#ab427569244f9b5d5b1de82b18e2729a6">More...</a><br /></td></tr>
 <tr class="separator:ab427569244f9b5d5b1de82b18e2729a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9fa230efd66efa505f906d736988fee"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#aa9fa230efd66efa505f906d736988fee">rpy2r</a> (TooN::Vector&lt; 3 &gt; &amp;rpy)</td></tr>
+<tr class="memdesc:aa9fa230efd66efa505f906d736988fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roll-pitch-yaw angles to rotation matrix.  <a href="#aa9fa230efd66efa505f906d736988fee">More...</a><br /></td></tr>
 <tr class="separator:aa9fa230efd66efa505f906d736988fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea12c2d6c0b7985bfd85b980b38e3b81"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#aea12c2d6c0b7985bfd85b980b38e3b81">rpy2tr</a> (double roll, double pitch, double yaw)</td></tr>
+<tr class="memdesc:aea12c2d6c0b7985bfd85b980b38e3b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roll-pitch-yaw angles to homogeneous transform.  <a href="#aea12c2d6c0b7985bfd85b980b38e3b81">More...</a><br /></td></tr>
 <tr class="separator:aea12c2d6c0b7985bfd85b980b38e3b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6e3c598eb2b8f34e5f0d4515c9ff8f"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#a1d6e3c598eb2b8f34e5f0d4515c9ff8f">rpy2tr</a> (TooN::Vector&lt; 3 &gt; &amp;rpy)</td></tr>
+<tr class="memdesc:a1d6e3c598eb2b8f34e5f0d4515c9ff8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roll-pitch-yaw angles to homogeneous transform.  <a href="#a1d6e3c598eb2b8f34e5f0d4515c9ff8f">More...</a><br /></td></tr>
 <tr class="separator:a1d6e3c598eb2b8f34e5f0d4515c9ff8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e92159304b68d519f2e6d1db1980dca"><td class="memItemLeft" align="right" valign="top">TooN::Vector&lt; 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#a1e92159304b68d519f2e6d1db1980dca">r2eul</a> (const TooN::Matrix&lt; 3, 3 &gt; &amp;R)</td></tr>
+<tr class="memdesc:a1e92159304b68d519f2e6d1db1980dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert rotation matrix to Euler angles.  <a href="#a1e92159304b68d519f2e6d1db1980dca">More...</a><br /></td></tr>
 <tr class="separator:a1e92159304b68d519f2e6d1db1980dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff684962fc6875e65cb65e9b1441724f"><td class="memItemLeft" align="right" valign="top">TooN::Vector&lt; 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#aff684962fc6875e65cb65e9b1441724f">tr2eul</a> (const TooN::Matrix&lt; 4, 4 &gt; &amp;T)</td></tr>
+<tr class="memdesc:aff684962fc6875e65cb65e9b1441724f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert homogeneous transform to Euler angles.  <a href="#aff684962fc6875e65cb65e9b1441724f">More...</a><br /></td></tr>
 <tr class="separator:aff684962fc6875e65cb65e9b1441724f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1b652c240e4cb8e2993852d3d0e5143"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#ae1b652c240e4cb8e2993852d3d0e5143">eul2r</a> (double phi, double theta, double psi)</td></tr>
+<tr class="memdesc:ae1b652c240e4cb8e2993852d3d0e5143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Euler angles to rotation matrix.  <a href="#ae1b652c240e4cb8e2993852d3d0e5143">More...</a><br /></td></tr>
 <tr class="separator:ae1b652c240e4cb8e2993852d3d0e5143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada654324e6e3e0276dcbde0e79c7481b"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#ada654324e6e3e0276dcbde0e79c7481b">eul2r</a> (const TooN::Vector&lt; 3 &gt; &amp;eul)</td></tr>
+<tr class="memdesc:ada654324e6e3e0276dcbde0e79c7481b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Euler angles to rotation matrix.  <a href="#ada654324e6e3e0276dcbde0e79c7481b">More...</a><br /></td></tr>
 <tr class="separator:ada654324e6e3e0276dcbde0e79c7481b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3d111b7bcc977c31855fd482d3bfd0c"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#ab3d111b7bcc977c31855fd482d3bfd0c">eul2tr</a> (double phi, double theta, double psi)</td></tr>
+<tr class="memdesc:ab3d111b7bcc977c31855fd482d3bfd0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Euler angles to homogeneous transform.  <a href="#ab3d111b7bcc977c31855fd482d3bfd0c">More...</a><br /></td></tr>
 <tr class="separator:ab3d111b7bcc977c31855fd482d3bfd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acba85f8a164abbf2b59b060b90a4f07b"><td class="memItemLeft" align="right" valign="top">TooN::Matrix&lt; 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PortingFunctions_8h.html#acba85f8a164abbf2b59b060b90a4f07b">eul2tr</a> (const TooN::Vector&lt; 3 &gt; &amp;eul)</td></tr>
+<tr class="memdesc:acba85f8a164abbf2b59b060b90a4f07b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Euler angles to homogeneous transform.  <a href="#acba85f8a164abbf2b59b060b90a4f07b">More...</a><br /></td></tr>
 <tr class="separator:acba85f8a164abbf2b59b060b90a4f07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>C++ implementation of some functions from the Matlab Robotic Toolbox by Peter I. Corke. </p>
+
+<p>Definition in file <a class="el" href="PortingFunctions_8h_source.html">PortingFunctions.h</a>.</p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a076335e3910352fe75a689234d2afe8f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -193,7 +212,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PortingFunctions_8h_source.html#l00052">52</a> of file <a class="el" href="PortingFunctions_8h_source.html">PortingFunctions.h</a>.</p>
+<p>Definition at line <a class="el" href="PortingFunctions_8h_source.html#l00056">56</a> of file <a class="el" href="PortingFunctions_8h_source.html">PortingFunctions.h</a>.</p>
 
 </div>
 </div>
@@ -207,7 +226,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PortingFunctions_8h_source.html#l00050">50</a> of file <a class="el" href="PortingFunctions_8h_source.html">PortingFunctions.h</a>.</p>
+<p>Definition at line <a class="el" href="PortingFunctions_8h_source.html#l00054">54</a> of file <a class="el" href="PortingFunctions_8h_source.html">PortingFunctions.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +240,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PortingFunctions_8h_source.html#l00051">51</a> of file <a class="el" href="PortingFunctions_8h_source.html">PortingFunctions.h</a>.</p>
+<p>Definition at line <a class="el" href="PortingFunctions_8h_source.html#l00055">55</a> of file <a class="el" href="PortingFunctions_8h_source.html">PortingFunctions.h</a>.</p>
 
 </div>
 </div>
@@ -255,7 +274,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>EUL2TR/EUL2R Convert Euler angles to homogeneous transform % % T = EUL2TR(PHI, THETA, PSI) is an SE(3) homogeneous % transformation matrix (4x4) with zero translation and rotation equivalent % to the specified Euler angles. These correspond to rotations about the Z, % Y, Z axes respectively. % % R = EUL2R(EUL) as above but the Euler angles are taken from the % vector (1x3) EUL = [PHI THETA PSI]. % % Options:: % 'deg' Angles given in degrees (radians default) % % Note:: % - The vectors PHI, THETA, PSI must be of the same length. % - The translational part is zero. % % See also EUL2R, RPY2TR, TR2EUL, SE3.eul. </p>
+
+<p>Convert Euler angles to rotation matrix. </p>
+<p>Compute the SO(3) rotation matrix equivalent to the specified Euler angles. These correspond to rotations about the Z, Y, Z axes respectively.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phi</td><td>angle around Z [rad] </td></tr>
+    <tr><td class="paramname">theta</td><td>angle around Y [rad] </td></tr>
+    <tr><td class="paramname">psi</td><td>angle around Z [rad] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the corresponding rotation matrix </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#ae1b652c240e4cb8e2993852d3d0e5143" title="Convert Euler angles to rotation matrix. ">eul2r</a>, <a class="el" href="PortingFunctions_8h.html#ab3d111b7bcc977c31855fd482d3bfd0c" title="Convert Euler angles to homogeneous transform. ">eul2tr</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="PortingFunctions_8cpp_source.html#l00202">202</a> of file <a class="el" href="PortingFunctions_8cpp_source.html">PortingFunctions.cpp</a>.</p>
 
@@ -274,6 +305,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Convert Euler angles to rotation matrix. </p>
+<p>Compute the SO(3) rotation matrix equivalent to the specified Euler angles. These correspond to rotations about the Z, Y, Z axes respectively.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eul</td><td>vector containing [phi, theta, psi] [rad] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the corresponding rotation matrix </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#ae1b652c240e4cb8e2993852d3d0e5143" title="Convert Euler angles to rotation matrix. ">eul2r</a>, <a class="el" href="PortingFunctions_8h.html#ab3d111b7bcc977c31855fd482d3bfd0c" title="Convert Euler angles to homogeneous transform. ">eul2tr</a> </dd></dl>
 
 </div>
 </div>
@@ -307,6 +349,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Convert Euler angles to homogeneous transform. </p>
+<p>Compute the SE(3) homogeneous transformation matrix (4x4) with zero translation and rotation equivalent to the specified Euler angles. These correspond to rotations about the Z, Y, Z axes respectively.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phi</td><td>angle around Z [rad] </td></tr>
+    <tr><td class="paramname">theta</td><td>angle around Y [rad] </td></tr>
+    <tr><td class="paramname">psi</td><td>angle around Z [rad] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the corresponding homogeneous transform matrix </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#ae1b652c240e4cb8e2993852d3d0e5143" title="Convert Euler angles to rotation matrix. ">eul2r</a>, <a class="el" href="PortingFunctions_8h.html#ab3d111b7bcc977c31855fd482d3bfd0c" title="Convert Euler angles to homogeneous transform. ">eul2tr</a> </dd></dl>
+
 <p>Definition at line <a class="el" href="PortingFunctions_8cpp_source.html#l00208">208</a> of file <a class="el" href="PortingFunctions_8cpp_source.html">PortingFunctions.cpp</a>.</p>
 
 </div>
@@ -324,6 +379,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Convert Euler angles to homogeneous transform. </p>
+<p>Compute the SE(3) homogeneous transformation matrix (4x4) with zero translation and rotation equivalent to the specified Euler angles. These correspond to rotations about the Z, Y, Z axes respectively.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eul</td><td>vector containing [phi, theta, psi] [rad] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the corresponding homogeneous transform matrix </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#ae1b652c240e4cb8e2993852d3d0e5143" title="Convert Euler angles to rotation matrix. ">eul2r</a>, <a class="el" href="PortingFunctions_8h.html#ab3d111b7bcc977c31855fd482d3bfd0c" title="Convert Euler angles to homogeneous transform. ">eul2tr</a> </dd></dl>
 
 </div>
 </div>
@@ -397,7 +463,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TR2EUL/R2EUL Convert homogeneous transform to Euler angles % % EUL = TR2EUL(T) are the ZYZ Euler angles (1x3) corresponding to % the rotational part of a homogeneous transform T (4x4). The 3 angles % EUL=[PHI,THETA,PSI] correspond to sequential rotations about the Z, Y and % Z axes respectively. % % EUL = TR2EUL(R) as above but the input is an orthonormal % rotation matrix R (3x3). % % Notes:: % - AXES ZYZ % - There is a singularity for the case where THETA=0 in which case PHI is arbitrarily % set to zero and PSI is the sum (PHI+PSI). % - Translation component is ignored. % % See also EUL2TR, TR2RPY. </p>
+
+<p>Convert rotation matrix to Euler angles. </p>
+<p>Compute the ZYZ Euler angles (1x3) corresponding to the rotation matrix R (3x3). The 3 angles EUL=[PHI,THETA,PSI] correspond to sequential rotations about the Z, Y and Z axes respectively.</p>
+<p>Notes::</p><ul>
+<li>AXES ZYZ</li>
+<li>There is a singularity for the case where THETA=0 in which case PHI is arbitrarily set to zero and PSI is the sum (PHI+PSI).</li>
+<li>Translation component is ignored.</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">R</td><td>a rotation matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a vector containing [PHI,THETA,PSI] </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#aff684962fc6875e65cb65e9b1441724f" title="Convert homogeneous transform to Euler angles. ">tr2eul</a> </dd></dl>
 
 </div>
 </div>
@@ -414,7 +495,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TR2RPY/R2RPY Convert a homogeneous transform / Rotation Matrix to roll-pitch-yaw angles % % RPY = TR2RPY(T) are the roll-pitch-yaw angles (1x3) % corresponding to the rotation part of a homogeneous transform T. The 3 % angles RPY=[R,P,Y] correspond to sequential rotations about the Z, Y and % X axes respectively. Roll and yaw angles in [-pi,pi) while pitch angle % in [-pi/2,pi/2). % % RPY = R2RPY(R) as above but the input is an orthonormal % rotation matrix R (3x3). % % Notes:: % - This assume the 'zyx' axes % - There is a singularity for the case where P=pi/2 in which case R is arbitrarily % set to zero and Y is the sum (R+Y). % - Translation component is ignored. % % See also rpy2tr, tr2eul. </p>
+
+<p>Rotation Matrix to roll-pitch-yaw angles. </p>
+<p>RPY = r2rpy(R) are the roll-pitch-yaw angles (1x3) corresponding to the rotation matrix R. The 3 angles RPY=[R,P,Y] correspond to sequential rotations about the Z, Y and X axes respectively. Roll and yaw angles in [-pi,pi) while pitch angle in [-pi/2,pi/2).</p>
+<p>Note::</p><ul>
+<li>AXES ZYX</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">R</td><td>a rotation Marix </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>vector [roll, pitch, yaw] </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#aa00cdb6a4d58df6b99ad3739c121d004" title="Homogeneous Transform Matrix to roll-pitch-yaw angles. ">tr2rpy</a> </dd></dl>
 
 </div>
 </div>
@@ -478,7 +572,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>RPY2TR/RPY2R Roll-pitch-yaw angles to homogeneous transform % % T = RPY2TR(ROLL, PITCH, YAW) is an SE(3) homogeneous % transformation matrix (4x4) with zero translation and rotation equivalent % to the specified roll, pitch, yaw angles angles. These correspond to % rotations about the Z, Y, X axes respectively. % % T = RPY2TR(RPY) as above but the roll, pitch, yaw angles are % taken from the vector (1x3) RPY=[ROLL,PITCH,YAW]. % % Note:: % - AXES ZYX % % See also TR2RPY, RPY2R, EUL2TR. </p>
+
+<p>Roll-pitch-yaw angles to rotation matrix. </p>
+<p>Compute the rotation matrix equivalent to the specified roll, pitch, yaw angles angles. These correspond to rotations about the Z, Y, X axes respectively.</p>
+<p>Note::</p><ul>
+<li>AXES ZYX</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roll</td><td>roll angle [rad] </td></tr>
+    <tr><td class="paramname">pitch</td><td>pitch angle [rad] </td></tr>
+    <tr><td class="paramname">yaw</td><td>yaw angle [rad] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the rotation matrix </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#ab427569244f9b5d5b1de82b18e2729a6" title="Roll-pitch-yaw angles to rotation matrix. ">rpy2r</a>, <a class="el" href="PortingFunctions_8h.html#aea12c2d6c0b7985bfd85b980b38e3b81" title="Roll-pitch-yaw angles to homogeneous transform. ">rpy2tr</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="PortingFunctions_8cpp_source.html#l00151">151</a> of file <a class="el" href="PortingFunctions_8cpp_source.html">PortingFunctions.cpp</a>.</p>
 
@@ -497,6 +606,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Roll-pitch-yaw angles to rotation matrix. </p>
+<p>Compute the rotation matrix equivalent to the specified roll, pitch, yaw angles angles. These correspond to rotations about the Z, Y, X axes respectively.</p>
+<p>Note::</p><ul>
+<li>AXES ZYX</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rpy</td><td>vector containing [roll pitch yaw] [rad] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the rotation matrix </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#ab427569244f9b5d5b1de82b18e2729a6" title="Roll-pitch-yaw angles to rotation matrix. ">rpy2r</a>, <a class="el" href="PortingFunctions_8h.html#aea12c2d6c0b7985bfd85b980b38e3b81" title="Roll-pitch-yaw angles to homogeneous transform. ">rpy2tr</a> </dd></dl>
 
 </div>
 </div>
@@ -530,6 +653,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Roll-pitch-yaw angles to homogeneous transform. </p>
+<p>Compute the homogeneous transformation matrix (4x4) with zero translation and rotation equivalent to the specified roll, pitch, yaw angles angles. These correspond to rotations about the Z, Y, X axes respectively.</p>
+<p>Note::</p><ul>
+<li>AXES ZYX</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roll</td><td>roll angle [rad] </td></tr>
+    <tr><td class="paramname">pitch</td><td>pitch angle [rad] </td></tr>
+    <tr><td class="paramname">yaw</td><td>yaw angle [rad] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>homogeneous transformation matrix </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#ab427569244f9b5d5b1de82b18e2729a6" title="Roll-pitch-yaw angles to rotation matrix. ">rpy2r</a>, <a class="el" href="PortingFunctions_8h.html#aea12c2d6c0b7985bfd85b980b38e3b81" title="Roll-pitch-yaw angles to homogeneous transform. ">rpy2tr</a> </dd></dl>
+
 <p>Definition at line <a class="el" href="PortingFunctions_8cpp_source.html#l00157">157</a> of file <a class="el" href="PortingFunctions_8cpp_source.html">PortingFunctions.cpp</a>.</p>
 
 </div>
@@ -547,6 +686,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Roll-pitch-yaw angles to homogeneous transform. </p>
+<p>Compute the homogeneous transformation matrix (4x4) with zero translation and rotation equivalent to the specified roll, pitch, yaw angles angles. These correspond to rotations about the Z, Y, X axes respectively.</p>
+<p>Note::</p><ul>
+<li>AXES ZYX</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rpy</td><td>vector containing [roll pitch yaw] [rad] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>homogeneous transformation matrix </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#ab427569244f9b5d5b1de82b18e2729a6" title="Roll-pitch-yaw angles to rotation matrix. ">rpy2r</a>, <a class="el" href="PortingFunctions_8h.html#aea12c2d6c0b7985bfd85b980b38e3b81" title="Roll-pitch-yaw angles to homogeneous transform. ">rpy2tr</a> </dd></dl>
 
 </div>
 </div>
@@ -714,6 +867,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Convert homogeneous transform to Euler angles. </p>
+<p>Compute the ZYZ Euler angles (1x3) corresponding to the rotational part of a homogeneous transform T (4x4). The 3 angles EUL=[PHI,THETA,PSI] correspond to sequential rotations about the Z, Y and Z axes respectively.</p>
+<p>Notes::</p><ul>
+<li>AXES ZYZ</li>
+<li>There is a singularity for the case where THETA=0 in which case PHI is arbitrarily set to zero and PSI is the sum (PHI+PSI).</li>
+<li>Translation component is ignored.</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>a homogeneous transform matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a vector containing [PHI,THETA,PSI] </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#aff684962fc6875e65cb65e9b1441724f" title="Convert homogeneous transform to Euler angles. ">tr2eul</a> </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aa00cdb6a4d58df6b99ad3739c121d004"></a>
@@ -729,6 +898,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Homogeneous Transform Matrix to roll-pitch-yaw angles. </p>
+<p>RPY = r2rpy(T) are the roll-pitch-yaw angles (1x3) corresponding to the rotation part of a homogeneous transform T. The 3 angles RPY=[R,P,Y] correspond to sequential rotations about the Z, Y and X axes respectively. Roll and yaw angles in [-pi,pi) while pitch angle in [-pi/2,pi/2).</p>
+<p>Note::</p><ul>
+<li>AXES ZYX</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>a homogeneous transform matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>vector [roll, pitch, yaw] </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="PortingFunctions_8h.html#a3be3a7cd860db1a68e09937c1cd4f996" title="Rotation Matrix to roll-pitch-yaw angles. ">r2rpy</a> </dd></dl>
 
 </div>
 </div>

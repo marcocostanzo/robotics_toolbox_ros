@@ -1,4 +1,4 @@
 <map id="robotics_toolbox_ros/src/PortingFunctions.cpp" name="robotics_toolbox_ros/src/PortingFunctions.cpp">
-<area shape="rect" id="node2" href="$PortingFunctions_8h.html" title="PortingFunctions.h" alt="" coords="52,95,183,121"/>
-<area shape="rect" id="node3" href="$GeometryHelper_8h.html" title="GeometryHelper.h" alt="" coords="53,169,181,196"/>
+<area shape="rect" id="node2" href="$PortingFunctions_8h.html" title="C++ implementation of some functions from the Matlab Robotic Toolbox by Peter I. Corke. " alt="" coords="52,95,183,121"/>
+<area shape="rect" id="node3" href="$GeometryHelper_8h.html" title="Contains helper functions for geometry. " alt="" coords="53,169,181,196"/>
 </map>
